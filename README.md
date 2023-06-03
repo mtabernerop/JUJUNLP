@@ -23,7 +23,14 @@ For each instance, the final classification decision is based on the weighted su
 
 ## Results
 
-TO-DO
+The following table records the official results of the HUHU@IberLEF 2023 shared task. The metrics recorded by the best (winning) approach in each task and the best performing baseline are indicated alongside the name of the system that registered them. For the two runs submitted of our system (JUJUNLP<sub>1</sub> and JUJUNLP<sub>2</sub>, respectively), the position achieved in the final ranking is shown in parentheses. The metrics are the F1-score, weighted F1-score and RMSE in subtasks 1, 2A and 2B, respectively.
+
+| System | Subtask 1 | Subtask 2A | Subtask 2B |
+|:------:|:---------:|:----------:|:----------:|
+| Best approach | 0.820 (RETUYT-INCO<sub>1</sub>) | 0.796 (JUJUNLP<sub>1</sub>) | 0.855 (M&C<sub>2</sub>) |
+| JUJUNLP<sub>1</sub> | 0.772 (12) | 0.796 (1) | 0.934 (22) |
+| JUJUNLP<sub>2</sub> | 0.722 (27) | 0.774 (4) | 0.939 (25) |
+| Best baseline | 0.789 (BLOOM_1B1) | 0.760 (BETO) | 0.874 (BETO) |
 
 ## References
 
