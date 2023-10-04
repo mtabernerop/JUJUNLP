@@ -21,24 +21,6 @@ We have used the following transformers for the ensembles:
 
 For each instance, the final classification decision is based on the weighted sum of outputs of these models. The novel weighted-voting system presented involves using each (normalized) transformer's metric score in the ensemble (F1-score or RMSE, depending on the task) to assess the importance of these in the final outputs of the ensemble (as opposed to the arithmetic mean typically used in conventional voting systems).
 
-## Repository Structure
-
-The repository is organized as follows:
-- `dataset/`: contains the scripts that generate plots that ease the analysis of the training set structure.
-- `task<1,2a,2b>/`: contains the scripts for training the transformers and predicting with the best resulting ensemble for `task<1,2a,2b>`.
-- `graphs/`: contains the scripts that generate plots that ease the analysis of the results of a saved ensemble experiment.
-
-## Experimentation
-
-For the sake of completeness and in an attempt to improve the results obtained by the transformer assemblers, each run was repeated a total of 6 times with the different combinations of the following hyperparameters:
-
-| Hyperparameter | Values |
-|:--------------:|:------:|
-| *Optimizer* | `{AdamW, Adafactor}` |
-| *Learning rate* | `{2e-05, 4e-05, 8e-05}` |
-
-The results of this experimentation can be found at [this link](https://drive.google.com/drive/folders/164RbDq_ndTWPPKahaO5LKsXRYEYowTem?usp=sharing).
-
 ## Results
 
 The following table records the official results of the HUHU@IberLEF 2023 shared task. The metrics recorded by the best (winning) approach in each task and the best performing baseline are indicated alongside the name of the system that registered them. For the two runs submitted of our system (JUJUNLP<sub>1</sub> and JUJUNLP<sub>2</sub>, respectively), the position achieved in the final ranking is shown in parentheses. The metrics are the F1-score, weighted F1-score and RMSE in subtasks 1, 2A and 2B, respectively.
