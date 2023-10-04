@@ -44,7 +44,7 @@ The following table records the official results of the HUHU@IberLEF 2023 shared
 
 ## Citation
 
-Please cite [our work]() if you use it.
+Please cite [our work](https://ceur-ws.org/Vol-3496/huhu-paper9.pdf) if you use it.
 
 ```bib
 @article{cruz2023unity,
